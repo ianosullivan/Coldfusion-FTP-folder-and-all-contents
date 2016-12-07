@@ -236,9 +236,6 @@
 						77777777<br />
 						local_path: <cfdump var="#local_path##local_dir_contents.name#"><br />
 						remote_path: <cfdump var="#remote_path##local_dir_contents.name#"><br />
-					</cfif>
-
-					<cfif debug_mode>
 						<br /><br />* * * * * * * * * * * * * * * * Recursivlely calling SFTPFolderContents() * * * * * * * * * * * * * * * *<br />
 					</cfif>
 
