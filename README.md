@@ -1,6 +1,8 @@
-Use this component to SFTP a folder and all it's contents (including subdirectories and subdirectory contents). 
+Use this component to FTP or SFTP a folder and all it's contents (including subdirectories and subdirectory contents). 
 
 This works for FTP, SFTP and public key authentication. The default function call assumes basic 'FTP'.
+
+This is a recursive function so it will continue to find and transfer subdirectories until there are no more.
 
 There are multiple optional paramaters;
 * secure - SFTP (yes) or FTP (no)
