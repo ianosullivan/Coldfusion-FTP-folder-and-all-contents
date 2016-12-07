@@ -13,7 +13,7 @@
 		<cfargument name="secure" required="true" type="string" hint="SFTP (yes) or FTP (no)">
 		<cfargument name="timeout" required="true" type="numeric" default="3600" hint="1 hour">
 		<cfargument name="local_path" required="true" type="string" default="">
-		<cfargument name="remote_path" required="true" type="string" default="">
+		<cfargument name="remote_path" required="false" type="string" default="/">
 		<cfargument name="fingerprint" required="false" type="string" hint="Only required for SFTP">
 		<cfargument name="public_key" required="false" type="boolean" default="false" hint="Does this server use the putty - public key authentication. Note: Lucee does not support authentication by public key.">
 		<cfargument name="port" required="false" type="numeric" default="21" hint="Only required because Google Play use a different port">
