@@ -1,11 +1,10 @@
-<cfset success = application.cfcs.sftp.SFTPFolder(
-	username = "************",
-	password = "************",
-	fingerprint = "**:**:**:**:**:**:**:**:**:**:**:**:**:**:**:**",
-	server = "********",
-	local_path = "C:\Users\ian.osullivan\Desktop\temp\",
-	remote_path = "/cygdrive/d/Domains/_temp/",
-	create_remote_folder = "remote_folder_123456789"
-)>
+<cfset local_path = "d:\path\to\folder\ftp-this-folder">
 
-<cfdump var="#success#">
+<!--- Standard FTP --->
+<!--- Note that 'debug_mode' is not an argument of the function 'SFTPFolder()' but it is actually a component variable --->
+<cfset ftp = $.sftp.SFTPFolder(
+	username = 'username',
+	password = 'your-password',
+	server = '192.168.1.1',
+	local_path = local_path
+)>
