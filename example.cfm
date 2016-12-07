@@ -1,10 +1,9 @@
-<cfset local_path = "d:\path\to\folder\ftp-this-folder">
+<cfset folder = "d:\path\to\folder\ftp-this-folder-the-server">
 
 <!--- Standard FTP --->
-<!--- Note that 'debug_mode' is not an argument of the function 'SFTPFolder()' but it is actually a component variable --->
-<cfset ftp = $.sftp.SFTPFolder(
+<cfset ftp = application.cfcs.sftp.SFTPFolder(
 	username = 'username',
 	password = 'your-password',
-	server = '192.168.1.1',
-	local_path = local_path
+	server = 'insert.destination.server.address.here',
+	local_path = folder
 )>
